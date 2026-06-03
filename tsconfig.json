@@ -14,14 +14,20 @@
     "declaration": false,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": false,
-    "lib": ["ESNext"],
-    "types": ["node"],
+    "allowJs": true,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
+    "lib": ["ESNext"],
+    "types": ["node", "bun"],
     "paths": {
+      "src/*": ["./src/*"],
       "bun:bundle": ["./src/types/bun-bundle.d.ts"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.tsx", 
+    "src/**/*.js"
+  ],
   "exclude": ["node_modules", "dist"]
 }
-
