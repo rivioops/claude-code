@@ -9,7 +9,8 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["node"]
+    "types": ["node", "bun"],
+    "jsx": "react-jsx"
   },
   "include": ["./**/*.ts", "./types.d.ts"]
 }
